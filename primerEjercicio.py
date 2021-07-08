@@ -10,7 +10,8 @@ def generarLista():
         else:
             acumulador.append(i)
 
-    return acumulador
+    cadenaLista = ", ".join(map(str, acumulador))
+    return cadenaLista
 
 def divisible(i,num):
     return i%num==0
